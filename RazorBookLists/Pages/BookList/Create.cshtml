@@ -1,0 +1,67 @@
+﻿@page
+@model RazorBookLists.Pages.BookList.CreateModel
+@{
+}
+
+<br />
+<h2>Create Book</h2>
+<br />
+<br />
+
+<div class="form-border">
+    <form method="post" class="form-group">
+        <div class="row push-tl-50-30">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <label asp-for="Book.ISBN"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="Book.ISBN" class="form-control" />
+                        <span asp-validation-for="Book.ISBN" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <label asp-for="Book.Title"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="Book.Title" class="form-control" />
+                        <span asp-validation-for="Book.Title" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <label asp-for="Book.Author"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="Book.Author" class="form-control" />
+                        <span asp-validation-for="Book.Author" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <label asp-for="Book.Price"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="Book.Price" class="form-control" />
+                        <span asp-validation-for="Book.Price" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <label asp-for="Book.Availability"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="Book.Availability" class="form-control" />
+                        <span asp-validation-for="Book.Availability" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Create" class="btn btn-small btn-success" />
+                    <a asp-page="Index" class="btn btn-small btn-primary">Back to Books</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
